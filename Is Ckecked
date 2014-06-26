@@ -6,9 +6,7 @@ $('input:checkbox').change(function(){
     }
     else{
         alert('Un Checked');
-        
         }
-    
 });
 
 Address:
