@@ -1,0 +1,22 @@
+
+<input id="ckeker" type="checkbox">Check it
+<br />
+<br />
+<button id="isckecked" class="btn btn-success">submit</button>
+
+
+
+$("#isckecked").on("click", function () {
+    if ($('input:checkbox').is(':checked')) {
+        alert('Checked');
+    } else {
+        alert('Not Checked');
+    }
+});
+
+
+// Must Run On Newer jQuery since on() is new function
+
+
+URL:
+http://jsfiddle.net/Behseini/V9VQV/
