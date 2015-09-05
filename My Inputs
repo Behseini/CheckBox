@@ -1,0 +1,87 @@
+
+http://jsfiddle.net/Behseini/vh8d9un8/6/
+
+<div class="ckeck-div">
+    <label for="checkbox_id" class="btn btn-default" role="button">
+        <input type="checkbox" name="checkbox" id="checkbox_id" /> <span></span>
+        &nbsp;&nbsp;&nbsp;You gonna loove It</label>
+</div>
+<br />
+<div class="radio-div list-group">
+    <label for="rd-box-1" class="list-group-item" role="button">
+        <input type="radio" name="radio" id="rd-box-1" /> <span></span>
+&nbsp;&nbsp;You gonna loove It</label>
+    <label for="rd-box-2" class="list-group-item" role="button">
+        <input type="radio" name="radio" id="rd-box-2" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-3" class="list-group-item" role="button">
+        <input type="radio" name="radio" id="rd-box-3" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-4" class="list-group-item" role="button">
+        <input type="radio" name="radio" id="rd-box-4" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-5" class="list-group-item" role="button">
+        <input type="radio" name="radio" id="rd-box-5" /> <span></span>
+You gonna loove It</label>
+</div>
+
+<br />
+<div class="radio-div btn-group-vertical" role="group" aria-label="...">
+    <label for="rd-box-1" class="btn btn-default" role="button">
+        <input type="radio" name="radio" id="rd-box-1" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-2" class="btn btn-default" role="button">
+        <input type="radio" name="radio" id="rd-box-2" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-3" class="btn btn-default" role="button">
+        <input type="radio" name="radio" id="rd-box-3" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-4" class="btn btn-default" role="button">
+        <input type="radio" name="radio" id="rd-box-4" /> <span></span>
+You gonna loove It</label>
+    <label for="rd-box-5" class="btn btn-default" role="button">
+        <input type="radio" name="radio" id="rd-box-5" /> <span></span>
+You gonna loove It</label>
+</div>
+
+
+
+.ckeck-div label input {
+    display: none;
+}
+.ckeck-div label span {
+    height: 14px;
+    width: 14px;
+    border: 1px solid grey;
+    display: inline-block;
+    background: #2c3e50;
+    border-radius: 2px;
+}
+.chk-txt{margin-left:20px;}
+[type=checkbox]:checked + span {
+    background: #1abc9c;
+    border: 4px solid #2c3e50;
+    border-radius: 2px;
+}
+
+.radio-div label input {
+    display: none;
+    
+}
+.radio-div label span {
+
+    height: 14px;
+    width: 14px;
+    border: 1px solid grey;
+    display: inline-block;
+    background: #2c3e50;
+    border-radius: 10px;
+}
+.list-group-item:hover {
+cursor:pointer;
+}
+[type=radio]:checked + span {
+    background: #1abc9c;
+    border: 4px solid #2c3e50;
+    border-radius: 10px;
+}
