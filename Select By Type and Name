@@ -1,0 +1,11 @@
+
+
+$('input:checkbox[name=theName]').
+
+$('input:checkbox[name=projectsWith]').on('change', function(){});
+
+
+
+
+ $('input:checkbox[name=projectsWith]').prop( "checked", false );
+ $('input:checkbox[name=projectsWith]').prop( "checked", true );
