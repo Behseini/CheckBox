@@ -1,0 +1,19 @@
+
+
+http://jsfiddle.net/Behseini/7nzck3z2/
+
+
+<label class="btn btn-default btn-sm " id="cluster-box" style="width:34px;">
+    <input type="checkbox" id="cluster" name="clusterPoints" class="hidden" /><i id="cluster-info" class="fa fa-map-marker"></i>
+</label>
+
+
+$('input:checkbox[name=clusterPoints]').on('change', function(){
+if($(this).is(':checked')){
+        $('#cluster-info').removeClass('fa-map-marker').addClass('fa-object-group');
+    }
+    else{
+         $('#cluster-info').removeClass('fa-object-group').addClass('fa-map-marker');
+        }
+
+});
