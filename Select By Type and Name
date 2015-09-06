@@ -4,7 +4,14 @@ $('input:checkbox[name=theName]').
 
 $('input:checkbox[name=projectsWith]').on('change', function(){});
 
-
+$('input:checkbox[name=projectsWith]').on('change', function(){
+    if($(this).is(':checked')){
+        alert('Checked');
+    }
+    else{
+        alert('Un Checked');
+        }
+});
 
 
  $('input:checkbox[name=projectsWith]').prop( "checked", false );
