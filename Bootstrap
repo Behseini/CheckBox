@@ -1,0 +1,59 @@
+https://jsfiddle.net/ut0rhtt9/
+
+
+<div class="btn-group">
+    <label class="btn btn-default"><input name="dpd" type="checkbox"><span>Button 1</span></label>
+    <label class="btn btn-default"><input name="gen" type="checkbox"><span>Button 2</span></label>
+    <label class="btn btn-default"><input name="trans" type="checkbox"><span>Button 2</span></label>
+</div>
+
+
+
+$('input:checkbox[name=dpd]').on('change', function(){
+    if($(this).is(':checked')){
+        alert('Checked');
+    }
+    else{
+        alert('Un Checked');
+        }
+});
+
+$('input:checkbox[name=gen]').on('change', function(){
+    if($(this).is(':checked')){
+        alert('Checked');
+    }
+    else{
+        alert('Un Checked');
+        }
+});
+
+$('input:checkbox[name=trans]').on('change', function(){
+    if($(this).is(':checked')){
+        alert('Checked');
+    }
+    else{
+        alert('Un Checked');
+        }
+});
+
+
+  label.btn {
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    span {
+      display: block;
+      padding: 10px 15px;
+    }
+
+    input[type=checkbox] {
+      display: none;
+    }
+
+    input:checked + span {
+      display: block;
+      color: #fff;
+      background-color: #285e8e;
+    }
+  }
